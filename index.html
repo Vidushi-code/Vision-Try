@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Try-On Glasses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="app-brand">Virtual Try-On</div>
+      
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#tryon" class="nav-link">Try On</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#advantages" class="nav-link">Advantages</a></li>
+            <li><a href="#how" class="nav-link">How It Works</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+      
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+        </nav>
+      </header>
+      
+      <!-- Hero Section -->
+      <section id="home" class="section hero-section">
+        <div class="section-container">
+          <h1 class="section-title" style="font-size: 3rem; margin-bottom: 30px;">Welcome to Virtual Try-On</h1>
+          <p class="section-text" style="font-size: 1.3rem; margin-bottom: 30px;">
+            Experience the future of eyewear shopping with our innovative Virtual Try-On platform.
+            Try on frames in real-time using advanced AI technology and find the perfect fit for your style.
+          </p>
+          <a href="#tryon" style="display: inline-block; margin-top: 20px; padding: 16px 40px; background: linear-gradient(90deg, #e6b366, #d4a373); color: #0f0f18; text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 6px 20px rgba(230, 179, 102, 0.3); transition: all 0.3s ease;">Start Try-On Experience</a>
+        </div>
+      </section>
+      
+      <section id="tryon" class="section">
+        <div class="section-container">
+          <h2 class="section-title">Try On Eyewear</h2>
+          <p class="section-text">
+            Select your favorite frame and see how it looks on you in real-time.
+          </p>
+        </div>
+      </section>
+
+<main class="layout">
+
+  <aside class="frames">
+    <h2>Choose Frame</h2>
+
+    <div class="frames-list">
+
+      <button class="frame-thumb"><img src="frame1.png" data-src="frame1.png"></button> <button class="frame-thumb"><img src="frame2.png"  data-src="frame2.png"></button> <button class="frame-thumb"><img src="frame3.png"  data-src="frame3.png"></button>
+      <button class="frame-thumb"><img src="frame4.png"  data-src="frame4.png"></button>
+      <button class="frame-thumb"><img src="frame5.png"  data-src="frame5.png"></button>
+      <button class="frame-thumb"><img src="frame6.png"  data-src="frame6.png"></button>
+      <button class="frame-thumb"><img src="frame7.png"  data-src="frame7.png"></button>
+      <button class="frame-thumb"><img src="frame8.png"  data-src="frame8.png"></button>
+
+    </div>
+  </aside>
+
+  <section class="preview">
+    <div class="preview-box">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="overlay"></canvas>
+    </div>
+  </section>
+
+</main>
+<section id="about" class="section">
+    <div class="section-container">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-text">
+        Virtual Try-On is a modern AI-powered platform designed to help you find the perfect eyewear
+        instantly. No need to visit a store — try unlimited frames from your home in real-time.
+      </p>
+  
+      <p class="section-text">
+        Our mission is simple: to make eyewear shopping easier, smarter, and more fun. We use advanced
+        facial landmark detection and augmented reality to show glasses that fit your face naturally.
+      </p>
+    </div>
+  </section>
+  
+  <section id="advantages" class="section highlight">
+    <div class="section-container">
+      <h2 class="section-title">Why Choose Our Try-On?</h2>
+  
+      <div class="adv-grid">
+        <div class="adv-item">
+          <h3>Real-Time Fit</h3>
+          <p>Frames automatically align with your eyes using live face tracking for a natural look.</p>
+        </div>
+  
+        <div class="adv-item">
+          <h3>No Download Needed</h3>
+          <p>Works directly in your browser. No app installation or setup required.</p>
+        </div>
+  
+        <div class="adv-item">
+          <h3>Instant Frame Preview</h3>
+          <p>Switch between multiple frames instantly and see which one suits you best.</p>
+        </div>
+  
+        <div class="adv-item">
+          <h3>Lightweight and Fast</h3>
+          <p>Optimized for speed — smooth on laptops & mobile devices.</p>
+        </div>
+  
+        <div class="adv-item">
+          <h3>Camera Safe & Private</h3>
+          <p>Your camera feed never leaves your device. No data stored, ever.</p>
+        </div>
+  
+        <div class="adv-item">
+          <h3>100% Free</h3>
+          <p>Try as many frames as you want, completely free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="how" class="section">
+    <div class="section-container">
+      <h2 class="section-title">How It Works</h2>
+  
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <p>Select any glasses frame from the list.</p>
+        </div>
+  
+        <div class="step">
+          <span class="step-number">2</span>
+          <p>Allow camera access so the website can detect your face.</p>
+        </div>
+  
+        <div class="step">
+          <span class="step-number">3</span>
+          <p>The frame instantly adjusts to your face using AI.</p>
+        </div>
+  
+        <div class="step">
+          <span class="step-number">4</span>
+          <p>Switch between multiple styles and find your perfect fit!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="section highlight">
+    <div class="section-container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-text">
+        Have questions, feedback, or collaboration ideas?
+      </p>
+  
+      <div class="contact-box">
+        <p>Email us anytime:</p>
+        <a href="mailto:support@virtualtryon.com" class="contact-link">
+          support@virtualtryon.com
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Virtual Try-On Eyewear. All rights reserved.</p>
+  </footer>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
