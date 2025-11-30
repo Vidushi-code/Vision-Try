@@ -14,7 +14,7 @@ A sophisticated real-time virtual try-on platform that enables users to preview 
 - **Responsive Positioning**: Intelligent frame scaling and positioning based on eye distance and facial geometry
 - **Smooth Animations**: EMA (Exponential Moving Average) smoothing for stable and natural frame tracking
 
-### User Experience
+### User Experience.
 - **Multiple Frame Selection**: Browse and switch between various eyewear styles instantly
 - **Camera Controls**: Flip camera view for optimal positioning
 - **Screenshot Capture**: Save your try-on results as PNG images
