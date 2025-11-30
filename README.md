@@ -1,4 +1,4 @@
-# Virtual Try-On Eyewear
+# Vision Try 
 
 A sophisticated real-time virtual try-on platform that enables users to preview eyewear frames using advanced AI-powered facial recognition technology. Built with MediaPipe Face Mesh and Flask, this application delivers an immersive and accurate try-on experience directly in the browser.
 
@@ -65,7 +65,7 @@ pip install flask flask-cors opencv-python numpy pillow
 
 ### 3. Project Structure
 ```
-virtual-tryon-eyewear/
+vision-try-eyewear/
 ├── cv.py                 # Flask backend for background removal
 ├── index.html            # Main HTML structure
 ├── style.css             # Stylesheet with elegant design
